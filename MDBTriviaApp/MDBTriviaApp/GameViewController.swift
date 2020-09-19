@@ -11,30 +11,70 @@ import UIKit
 class GameViewController: UIViewController {
 
     @IBOutlet weak var memberPicture: UIImageView!
-    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var scoreTicker: UILabel!
+    @IBOutlet weak var progressBar: UIView!
+    
+    
+    //Outlet for Buttons
+  
+    @IBOutlet weak var option1: UIButton!
+    @IBOutlet weak var option2: UIButton!
+    @IBOutlet weak var option3: UIButton!
+    @IBOutlet weak var option4: UIButton!
+    
     
     var memberNames = Constants.names.map({ $0 })
-    var alreadyDisplayed: [String] = []
+    var notYetDisplayed: [String]!
     var currentDisplayed: String = ""
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        memberPicture.image = displayNewImg()
-        nextButton.addTarget(self, action: #selector(nextButtonFunc(sender:)), for: .touchUpInside)
+//        memberPicture.image = displayNewImg()
+//        nextButton.addTarget(self, action: #selector(nextButtonFunc(sender:)), for: .touchUpInside)
     }
     
-    @IBAction func nextButtonFunc(sender: UIButton!) {
-        alreadyDisplayed.append(currentDisplayed)
+    override func viewDidAppear(_ animated: Bool) {
+       //make a copy of the nameList, we wil remove from this lest
+        notYetDisplayed = memberNames
     }
     
-    func displayNewImg() -> UIImage {
-        //var answerOptions: [String] = []
-        let randNames = memberNames.map({ $0 })
-        let randomIndex = Int(arc4random_uniform(UInt32(randNames.count)))
-        currentDisplayed = randNames[randomIndex]
-        return Constants.getImageFor(name: currentDisplayed)
+    
+    @IBAction func answerPressed(_ sender: UIButton) {
+ 
+        
+        
+    }
+        
+    func updateQuestion(){
+        
+    }
+        
+    }
+    
+    
+    
+    
+    
+//    @objc func nextButtonFunc(sender: UIButton!) {
+//        if notYetDisplayed.count != 0 {
+//            UIView.animate(withDuration: 0.2, animations: {
+//                self.memberPicture.alpha = 0
+//            }, completion: { _ in
+//                UIView.animate(withDuration: 0.2, animations: {
+//                    self.memberPicture.alpha = 1
+//                })
+//            })
+//        } else {
+//            print("hello")
+//        }
+//    }
+//
+//    func displayNewImg() -> UIImage {
+//        //var answerOptions: [String] = []
+//        var randNames = memberNames.map({ $0 })
+//        let randomIndex = Int(arc4random_uniform(UInt32(randNames.count)))
+//        currentDisplayed = randNames.remove(at: randomIndex)
+//        return Constants.getImageFor(name: currentDisplayed)
         
         //Pick a random number between 1 and 4 to be the correct answer index
         //var correctIndex = Int(arc4random_uniform(4))
@@ -44,10 +84,10 @@ class GameViewController: UIViewController {
 
         //    answerOptions.append(memberNames[)
 
-        }
+
 
         
 
-    }
+
         
 
