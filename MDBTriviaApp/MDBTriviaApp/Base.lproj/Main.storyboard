@@ -15,9 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCi-fD-uJ7">
-                                <rect key="frame" x="103" y="399" width="209" height="98"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCi-fD-uJ7">
+                                <rect key="frame" x="102.5" y="399" width="209" height="98"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="72"/>
                                 <state key="normal" title="START"/>
                                 <connections>
@@ -27,6 +26,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZCi-fD-uJ7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ITC-jI-sGw"/>
+                            <constraint firstItem="ZCi-fD-uJ7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K2t-fd-Aeb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -46,120 +49,97 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PiP-p5-534" userLabel="HeaderView">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="111.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XQR-JF-vJu" userLabel="HeaderView">
-                                        <rect key="frame" x="0.0" y="103" width="15" height="9"/>
-                                        <color key="backgroundColor" red="0.23513264229046629" green="0.91478334860984456" blue="0.41286444195506361" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phi-dT-00M">
-                                        <rect key="frame" x="18" y="58" width="83.5" height="20.5"/>
+                                        <rect key="frame" x="18" y="51" width="83.5" height="20.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XQR-JF-vJu" userLabel="ProgressBar">
+                                        <rect key="frame" x="0.0" y="102" width="15" height="9.5"/>
+                                        <color key="backgroundColor" red="0.23513264229046629" green="0.91478334860984456" blue="0.41286444195506361" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="XQR-JF-vJu" secondAttribute="trailing" constant="399" id="22e-oP-QC7"/>
-                                    <constraint firstItem="XQR-JF-vJu" firstAttribute="leading" secondItem="PiP-p5-534" secondAttribute="leading" id="M5h-uN-ccM"/>
-                                    <constraint firstItem="phi-dT-00M" firstAttribute="leading" secondItem="PiP-p5-534" secondAttribute="leading" constant="18" id="Pvx-of-qw0"/>
-                                    <constraint firstItem="XQR-JF-vJu" firstAttribute="leading" secondItem="PiP-p5-534" secondAttribute="leading" id="dQm-we-G8X"/>
-                                    <constraint firstAttribute="trailing" secondItem="phi-dT-00M" secondAttribute="trailing" constant="312.5" id="iCs-X7-Cly"/>
-                                    <constraint firstAttribute="bottom" secondItem="phi-dT-00M" secondAttribute="bottom" constant="33" id="uk2-Hi-0jv"/>
-                                    <constraint firstItem="phi-dT-00M" firstAttribute="top" secondItem="PiP-p5-534" secondAttribute="top" constant="58" id="yt1-zT-2E5"/>
-                                    <constraint firstAttribute="bottom" secondItem="XQR-JF-vJu" secondAttribute="bottom" constant="-0.5" id="zI1-Yo-oWz"/>
+                                    <constraint firstAttribute="height" constant="88" id="QHN-zg-G8u"/>
+                                    <constraint firstItem="phi-dT-00M" firstAttribute="leading" secondItem="PiP-p5-534" secondAttribute="leading" constant="18" id="x1I-SZ-atO"/>
+                                    <constraint firstItem="phi-dT-00M" firstAttribute="top" secondItem="PiP-p5-534" secondAttribute="top" constant="51" id="yeD-af-wCf"/>
+                                    <constraint firstItem="XQR-JF-vJu" firstAttribute="top" secondItem="PiP-p5-534" secondAttribute="bottom" id="zys-r9-GgY"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bA4-6R-2u2" userLabel="QuestionView">
-                                <rect key="frame" x="20" y="140" width="374" height="302"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aadypillai" translatesAutoresizingMaskIntoConstraints="NO" id="eJg-La-eQj" userLabel="MemberPicture">
-                                        <rect key="frame" x="20" y="13" width="334" height="277"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iPF-UC-2Kx" userLabel="ButtonsView">
-                                <rect key="frame" x="20" y="450" width="374" height="412"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="TnT-a1-ffS">
-                                        <rect key="frame" x="62" y="40" width="250" height="306"/>
-                                        <subviews>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2f-3B-r0e">
-                                                <rect key="frame" x="0.0" y="0.0" width="250" height="51"/>
-                                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="33"/>
-                                                <state key="normal" title="Patrick Zhu">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="answerPressed:" destination="TZx-8i-bJt" eventType="touchUpInside" id="ynU-v8-t3U"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9A-YO-2bG">
-                                                <rect key="frame" x="0.0" y="85" width="250" height="51"/>
-                                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="33"/>
-                                                <state key="normal" title="Patrick Zhu">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="answerPressed:" destination="TZx-8i-bJt" eventType="touchUpInside" id="44S-5u-DK8"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scW-FY-Deu" userLabel="Option3">
-                                                <rect key="frame" x="0.0" y="170" width="250" height="51"/>
-                                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="33"/>
-                                                <state key="normal" title="Patrick Zhu">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="answerPressed:" destination="TZx-8i-bJt" eventType="touchUpInside" id="2yD-80-IXx"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwS-UZ-6Xr">
-                                                <rect key="frame" x="0.0" y="255" width="250" height="51"/>
-                                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="33"/>
-                                                <state key="normal" title="Patrick Zhu">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="answerPressed:" destination="TZx-8i-bJt" eventType="touchUpInside" id="fgL-Ul-yuv"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="250" id="iy2-tQ-1jR"/>
-                                        </constraints>
-                                    </stackView>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aadypillai" translatesAutoresizingMaskIntoConstraints="NO" id="eJg-La-eQj" userLabel="MemberPicture">
+                                <rect key="frame" x="20" y="128" width="374" height="270"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="TnT-a1-ffS" secondAttribute="trailing" constant="62" id="IeS-eE-10t"/>
-                                    <constraint firstItem="TnT-a1-ffS" firstAttribute="leading" secondItem="iPF-UC-2Kx" secondAttribute="leading" constant="62" id="Scs-LP-Om9"/>
-                                    <constraint firstAttribute="bottom" secondItem="TnT-a1-ffS" secondAttribute="bottom" constant="66" id="ZVR-4J-C9p"/>
-                                    <constraint firstItem="TnT-a1-ffS" firstAttribute="top" secondItem="iPF-UC-2Kx" secondAttribute="top" constant="40" id="yUe-VZ-Occ"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="270" id="F3T-uy-QsW"/>
+                                    <constraint firstAttribute="height" constant="270" id="nHW-QT-gph"/>
                                 </constraints>
-                            </view>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="TnT-a1-ffS">
+                                <rect key="frame" x="60" y="438" width="294" height="344"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2f-3B-r0e">
+                                        <rect key="frame" x="0.0" y="0.0" width="294" height="60.5"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="33"/>
+                                        <state key="normal" title="Patrick Zhu">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerPressed:" destination="TZx-8i-bJt" eventType="touchUpInside" id="ynU-v8-t3U"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9A-YO-2bG">
+                                        <rect key="frame" x="0.0" y="94.5" width="294" height="60.5"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="33"/>
+                                        <state key="normal" title="Patrick Zhu">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerPressed:" destination="TZx-8i-bJt" eventType="touchUpInside" id="44S-5u-DK8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scW-FY-Deu" userLabel="Option3">
+                                        <rect key="frame" x="0.0" y="189" width="294" height="60.5"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="33"/>
+                                        <state key="normal" title="Patrick Zhu">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerPressed:" destination="TZx-8i-bJt" eventType="touchUpInside" id="2yD-80-IXx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwS-UZ-6Xr">
+                                        <rect key="frame" x="0.0" y="283.5" width="294" height="60.5"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="33"/>
+                                        <state key="normal" title="Patrick Zhu">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerPressed:" destination="TZx-8i-bJt" eventType="touchUpInside" id="fgL-Ul-yuv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="bA4-6R-2u2" firstAttribute="top" secondItem="PiP-p5-534" secondAttribute="bottom" constant="28.5" id="1mb-Xb-9Rh"/>
-                            <constraint firstItem="bA4-6R-2u2" firstAttribute="leading" secondItem="1i4-ld-5Xa" secondAttribute="leading" constant="20" id="800-9B-zKS"/>
-                            <constraint firstItem="iPF-UC-2Kx" firstAttribute="leading" secondItem="1i4-ld-5Xa" secondAttribute="leading" constant="20" id="G3I-yT-C45"/>
-                            <constraint firstItem="1i4-ld-5Xa" firstAttribute="trailing" secondItem="iPF-UC-2Kx" secondAttribute="trailing" constant="20" id="Pfa-7p-Kma"/>
-                            <constraint firstItem="iPF-UC-2Kx" firstAttribute="centerX" secondItem="1Rc-3l-aSx" secondAttribute="centerX" id="ceH-6x-iXe"/>
-                            <constraint firstItem="1i4-ld-5Xa" firstAttribute="trailing" secondItem="bA4-6R-2u2" secondAttribute="trailing" constant="20" id="dKf-OZ-vZc"/>
-                            <constraint firstItem="PiP-p5-534" firstAttribute="centerX" secondItem="1Rc-3l-aSx" secondAttribute="centerX" id="qjW-bh-B9x"/>
-                            <constraint firstItem="PiP-p5-534" firstAttribute="top" secondItem="1Rc-3l-aSx" secondAttribute="top" id="rnL-03-7D2"/>
-                            <constraint firstItem="iPF-UC-2Kx" firstAttribute="top" secondItem="bA4-6R-2u2" secondAttribute="bottom" constant="8" id="sKq-Jz-Z0X"/>
-                            <constraint firstItem="iPF-UC-2Kx" firstAttribute="bottom" secondItem="1i4-ld-5Xa" secondAttribute="bottom" id="xal-ji-lqW"/>
-                            <constraint firstItem="PiP-p5-534" firstAttribute="centerX" secondItem="1Rc-3l-aSx" secondAttribute="centerX" id="yHm-nh-1cb"/>
-                            <constraint firstItem="iPF-UC-2Kx" firstAttribute="top" secondItem="bA4-6R-2u2" secondAttribute="bottom" constant="8" id="zq2-Es-2po"/>
+                            <constraint firstItem="eJg-La-eQj" firstAttribute="centerX" secondItem="1Rc-3l-aSx" secondAttribute="centerX" id="2Wu-d5-30T"/>
+                            <constraint firstItem="PiP-p5-534" firstAttribute="trailing" secondItem="1i4-ld-5Xa" secondAttribute="trailing" id="7ud-vO-9JQ"/>
+                            <constraint firstItem="TnT-a1-ffS" firstAttribute="leading" secondItem="1i4-ld-5Xa" secondAttribute="leading" constant="60" id="JKZ-s9-JAX"/>
+                            <constraint firstItem="eJg-La-eQj" firstAttribute="leading" secondItem="1Rc-3l-aSx" secondAttribute="leading" constant="20" id="TBI-Uz-fJL"/>
+                            <constraint firstAttribute="trailing" secondItem="eJg-La-eQj" secondAttribute="trailing" constant="20" id="Ypr-of-GcV"/>
+                            <constraint firstItem="PiP-p5-534" firstAttribute="leading" secondItem="1i4-ld-5Xa" secondAttribute="leading" id="jjl-iz-TrJ"/>
+                            <constraint firstItem="1i4-ld-5Xa" firstAttribute="bottom" secondItem="TnT-a1-ffS" secondAttribute="bottom" constant="80" id="kXr-SM-2b7"/>
+                            <constraint firstItem="TnT-a1-ffS" firstAttribute="top" secondItem="eJg-La-eQj" secondAttribute="bottom" constant="40" id="mgg-em-a2H"/>
+                            <constraint firstItem="1i4-ld-5Xa" firstAttribute="trailing" secondItem="TnT-a1-ffS" secondAttribute="trailing" constant="60" id="phe-WV-Q6O"/>
+                            <constraint firstItem="eJg-La-eQj" firstAttribute="top" secondItem="PiP-p5-534" secondAttribute="bottom" constant="40" id="vPg-Op-X9w"/>
+                            <constraint firstItem="PiP-p5-534" firstAttribute="top" secondItem="1Rc-3l-aSx" secondAttribute="top" id="zYK-5Z-c2E"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1i4-ld-5Xa"/>
                     </view>

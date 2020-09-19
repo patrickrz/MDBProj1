@@ -15,6 +15,7 @@
 		802381F125149C240044E13F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 802381EF25149C240044E13F /* LaunchScreen.storyboard */; };
 		802381F92514A2740044E13F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802381F82514A2740044E13F /* Constants.swift */; };
 		802381FB2514A40F0044E13F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802381FA2514A40F0044E13F /* GameViewController.swift */; };
+		8032D249251678C300CDFE60 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8032D248251678C300CDFE60 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		802381F225149C240044E13F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		802381F82514A2740044E13F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		802381FA2514A40F0044E13F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		8032D248251678C300CDFE60 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				802381EF25149C240044E13F /* LaunchScreen.storyboard */,
 				802381F225149C240044E13F /* Info.plist */,
 				802381FA2514A40F0044E13F /* GameViewController.swift */,
+				8032D248251678C300CDFE60 /* Question.swift */,
 			);
 			path = MDBTriviaApp;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				802381FB2514A40F0044E13F /* GameViewController.swift in Sources */,
 				802381E925149C1E0044E13F /* ViewController.swift in Sources */,
 				802381E525149C1E0044E13F /* AppDelegate.swift in Sources */,
+				8032D249251678C300CDFE60 /* Question.swift in Sources */,
 				802381E725149C1E0044E13F /* SceneDelegate.swift in Sources */,
 				802381F92514A2740044E13F /* Constants.swift in Sources */,
 			);
