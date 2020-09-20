@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "2EAECC64-6D39-493D-A700-BCBC0F9331F5"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIViewController.h"
@@ -30,116 +30,24 @@
             filePath = "MDBTriviaApp/GameViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
             landmarkName = "GameViewController"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "597583BD-82C4-409C-BE19-79469BE58ABF - 9b6c6d05a6ecd808"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MDBTriviaApp.GameViewController.memberPicture.getter : Swift.Optional&lt;__C.UIImageView&gt;"
-                  moduleName = "MDBTriviaApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/patrickzhu/Documents/MDB/projects/MDBTrivia/MDBTriviaApp/MDBTriviaApp/GameViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "88">
-               </Location>
-               <Location
-                  uuid = "597583BD-82C4-409C-BE19-79469BE58ABF - 526d854a2ca2f434"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MDBTriviaApp.GameViewController.memberPicture.setter : Swift.Optional&lt;__C.UIImageView&gt;"
-                  moduleName = "MDBTriviaApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/patrickzhu/Documents/MDB/projects/MDBTrivia/MDBTriviaApp/MDBTriviaApp/GameViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "155">
-               </Location>
-               <Location
-                  uuid = "597583BD-82C4-409C-BE19-79469BE58ABF - ccfb6dad5e10bf0b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MDBTriviaApp.GameViewController.memberPicture.modify : Swift.Optional&lt;__C.UIImageView&gt;"
-                  moduleName = "MDBTriviaApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/patrickzhu/Documents/MDB/projects/MDBTrivia/MDBTriviaApp/MDBTriviaApp/GameViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "65">
-               </Location>
-               <Location
-                  uuid = "597583BD-82C4-409C-BE19-79469BE58ABF - 390685b0ba4fff6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MDBTriviaApp.GameViewController.memberPicture.modify : Swift.Optional&lt;__C.UIImageView&gt; with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "MDBTriviaApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/patrickzhu/Documents/MDB/projects/MDBTrivia/MDBTriviaApp/MDBTriviaApp/GameViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "80">
-               </Location>
-               <Location
-                  uuid = "597583BD-82C4-409C-BE19-79469BE58ABF - f2bc191eec1d55d9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MDBTriviaApp.GameViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; MDBTriviaApp.GameViewController"
-                  moduleName = "MDBTriviaApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/patrickzhu/Documents/MDB/projects/MDBTrivia/MDBTriviaApp/MDBTriviaApp/GameViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "358">
-               </Location>
-               <Location
-                  uuid = "597583BD-82C4-409C-BE19-79469BE58ABF - 8c451fc621ae9cc2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MDBTriviaApp.GameViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;MDBTriviaApp.GameViewController&gt;"
-                  moduleName = "MDBTriviaApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/patrickzhu/Documents/MDB/projects/MDBTrivia/MDBTriviaApp/MDBTriviaApp/GameViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "327">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "39C26D32-94D4-4541-B614-EB7B5E31AC0A"
+            uuid = "0D7A62E5-473F-49C8-B54A-4E54BDC970A8"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MDBTriviaApp/GameViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
             landmarkName = "updateQuestion()"
             landmarkType = "7">
          </BreakpointContent>
