@@ -6,7 +6,6 @@ each round, a player has only 5 seconds to guess the member's name correctly bef
 will also flash red or green to indicate whether or not the answer choice was selected correctly.
 
 <img src = "MDBTriviaApp/Simulator%20Screen%20Shot%20-%20iPhone%2011%20Pro%20-%202020-09-21%20at%2010.18.58.png" width = "200">
-![](MDBTriviaApp/Simulator%20Screen%20Shot%20-%20iPhone%2011%20Pro%20-%202020-09-21%20at%2010.18.58.png)
-![](MDBTriviaApp/Simulator%20Screen%20Shot%20-%20iPhone%2011%20Pro%20-%202020-09-21%20at%2010.19.04.png)
-![](MDBTriviaApp/Simulator%20Screen%20Shot%20-%20iPhone%2011%20Pro%20-%202020-09-21%20at%2010.19.20.png)
-![](MDBTriviaApp/Simulator%20Screen%20Shot%20-%20iPhone%2011%20Pro%20-%202020-09-21%20at%2010.19.25.png)
+<img src = "MDBTriviaApp/Simulator%20Screen%20Shot%20-%20iPhone%2011%20Pro%20-%202020-09-21%20at%2010.19.04.png" width = "200">
+<img src = "MDBTriviaApp/Simulator%20Screen%20Shot%20-%20iPhone%2011%20Pro%20-%202020-09-21%20at%2010.19.20.png" width = "200">
+<img src = "MDBTriviaApp/Simulator%20Screen%20Shot%20-%20iPhone%2011%20Pro%20-%202020-09-21%20at%2010.19.25.png" width = "200">
