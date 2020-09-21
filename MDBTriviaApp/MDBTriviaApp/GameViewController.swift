@@ -11,6 +11,8 @@ import UIKit
 var correctIndex: Int = -1
 var timeRemaining: Int = 5
 var senderButton: UIButton?
+var currentDisplayed: String = ""
+
 class GameViewController: UIViewController {
 
     @IBOutlet weak var memberPicture: UIImageView!
@@ -31,7 +33,6 @@ class GameViewController: UIViewController {
     
     let memberNames = Constants.names.map({ $0 })
     var alreadyDisplayed: [Int] = []
-    var currentDisplayed: String = ""
     var score: Int = 0
     var selectedAnswer: Int = 0
     var randNames: [String]?
@@ -42,6 +43,8 @@ class GameViewController: UIViewController {
     var colorTimer: Timer!
     var colorTimeRemaining: Double = 0.5
     var isPause: Bool = false
+    
+    var recentCorrect: [String] = ["N/A", "N/A", "N/A"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -117,12 +120,8 @@ class GameViewController: UIViewController {
     }
     
     
-    
-    
-    
     override func viewDidAppear(_ animated: Bool) {
-       //make a copy of the nameList, we wil remove from this lest
-       // notYetDisplayed = memberNames
+   
     }
     
     @objc func decrementTimerLabel() {
@@ -150,6 +149,12 @@ class GameViewController: UIViewController {
         if buttonSelected == instCorrectIndex {
             score = score + 1
             streak = streak + 1
+            if recentCorrect.count == 3 {
+                recentCorrect.remove(at: 0)
+                recentCorrect.append(currentDisplayed)
+            } else {
+                recentCorrect.append(currentDisplayed)
+            }
             if streak > bstStreak {
                 bstStreak = streak
             }
@@ -208,53 +213,22 @@ class GameViewController: UIViewController {
             option4.setTitle(currentDisplayed, for: UIControl.State.normal)
         }
     }
+
     
-    @IBAction func seguetoStats(_ sender: Any) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let vc = segue.destination as? ResultsViewController else { return }
+        vc.longestStreak = self.bstStreak
+        vc.recentCorrect = self.recentCorrect
+    }
+    
+    
+    @IBAction func statButtonPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "seguetoStats", sender: self)
-        
-    }
-    
-   
-        
     }
     
     
+    }
     
+
     
-    
-//    @objc func nextButtonFunc(sender: UIButton!) {
-//        if notYetDisplayed.count != 0 {
-//            UIView.animate(withDuration: 0.2, animations: {
-//                self.memberPicture.alpha = 0
-//            }, completion: { _ in
-//                UIView.animate(withDuration: 0.2, animations: {
-//                    self.memberPicture.alpha = 1
-//                })
-//            })
-//        } else {
-//            print("hello")
-//        }
-//    }
-//
-//    func displayNewImg() -> UIImage {
-//        //var answerOptions: [String] = []
-//        var randNames = memberNames.map({ $0 })
-//        let randomIndex = Int(arc4random_uniform(UInt32(randNames.count)))
-//        currentDisplayed = randNames.remove(at: randomIndex)
-//        return Constants.getImageFor(name: currentDisplayed)
-        
-        //Pick a random number between 1 and 4 to be the correct answer index
-        //var correctIndex = Int(arc4random_uniform(4))
-
-        //Choose 4 members at random from the names
-      //  for n in 1...4 {
-
-        //    answerOptions.append(memberNames[)
-
-
-
-        
-
-
-        
 
